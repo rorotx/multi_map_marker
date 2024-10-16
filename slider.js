@@ -4,55 +4,6 @@ $(document).ready(function () {
     let currentBedroomConfiguration = ""; // Current bedroom configuration
     let allowedValues = []; // Allowed "to" values for the current configuration
   
-    const bedroomConfigurations = {
-      oneBedroom: [
-        [2500, 2500],
-        [2500, 2750],
-        [2500, 3010],
-      ],
-      twoBedroom: [
-        [3375, 3375],
-        [3375, 3625],
-        [3375, 3860],
-      ],
-      threeBedroom: [
-        [4810, 4810],
-        [4810, 5060],
-        [4810, 5310],
-      ],
-      oneTwoBedroom: [
-        [2500, 2500],
-        [2500, 2750],
-        [2500, 3010],
-        [2500, 3625],
-        [2500, 3860],
-      ],
-      twoThreeBedroom: [
-        [3375, 3375],
-        [3375, 3625],
-        [3375, 3860],
-        [3375, 4110],
-        [3375, 5310],
-      ],
-      oneTwoThreeBedroom: [
-        [2500, 2500],
-        [2500, 2750],
-        [2500, 3010],
-        [2500, 3625],
-        [2500, 3860],
-        [2500, 4110],
-        [2500, 5310],
-      ],
-      oneThreeBedroom: [
-        [2500, 2500],
-        [2500, 2750],
-        [2500, 3010],
-        [2500, 4810],
-        [2500, 5060],
-        [2500, 5310],
-      ],
-    };
-  
     function updateConfiguration() {
       const isOneBedroomChecked = $(".onebedroom").hasClass("active");
       const isTwoBedroomChecked = $(".twobedroom").hasClass("active");
