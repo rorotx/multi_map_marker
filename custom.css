@@ -1,0 +1,136 @@
+/* You can apply your own color! 
+    --main-light-color is the light grey, 
+    --main-dark-color is the text
+    --main-active-color is the highlight
+    you can just add like red, or blue or any helx you like! */
+    :root {
+      --main-light-color: #fff;
+      --main-dark-color: #732001;
+      --main-active-color: #f8dfd6;
+    }
+    .datepicker-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .datepicker-dropdown {
+      border-radius: 0px !important;
+      border: 1px solid #fff !important;
+      background: var(--main-dark-color);
+      border-radius: 0px !important;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0) !important;
+      box-sizing: border-box;
+    }
+    
+    .datepicker-panel > ul[data-view="week"] > li {
+      background-color: var(--main-dark-color);
+      color: var(--main-light-color);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin: 0;
+    
+      height: initial;
+      border-radius: 0px !important;
+      transition: all 0.2s ease;
+    }
+    
+    .datepicker-panel > ul[data-view="week"] > li:hover {
+      background-color: var(--main-light-color);
+      color: var(--main-dark-color);
+      border-radius: 9rem !important;
+    }
+    
+    .datepicker-top-left::before,
+    .datepicker-top-left::after {
+      display: none;
+    }
+    .datepicker-panel > ul > li {
+      color: var(--main-light-color);
+      background: var(--main-dark-color);
+      transition: all 0.2s ease;
+      border-radius: 9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .datepicker-panel > ul > .muted {
+      color: rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    .datepicker-panel > ul > li.picked,
+    .datepicker-panel > ul > li.picked:hover {
+      color: var(--main-dark-color) !important;
+      background: var(--main-light-color) !important;
+      border-radius: 50% !important;
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+    
+    .datepicker-panel > ul > li.highlighted {
+      background: var(--main-active-color) !important;
+      color: var(--main-dark-color) !important;
+    }
+    .datepicker-panel {
+      padding: 0rem 0.875rem !important;
+    }
+    
+    li[data-view="month prev"],
+    li[data-view="month next"] {
+      font-size: 1.5rem !important;
+    }
+    
+    li[data-view="month current"],
+    li[data-view="year current"] {
+      text-align: left;
+      color: var(--main-dark-color);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem !important;
+      /* line-height: 24px; */
+      border-radius: 9rem;
+    }
+    
+    .datepicker-panel > ul > li:hover {
+      background: var(--main-light-color);
+      color: var(--main-dark-color);
+    
+      border-radius: 9rem;
+    }
+    
+    .datepicker-panel > ul:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .datepicker-panel > ul > li[data-view="month current"] {
+      width: auto !important;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      white-space: nowrap;
+    }
+    
+    .datepicker-panel > ul::before,
+    .datepicker-panel > ul::after {
+      display: none;
+    }
+    
+    .datepicker-dropdown {
+      width: 22.4rem;
+    }
+    
+    .datepicker-panel > ul > li {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .datepicker-container {
+        width: calc(100vw - 2rem);
+        max-width: 22.4rem;
+      }
+    }
