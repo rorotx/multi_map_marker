@@ -407,7 +407,7 @@ function debounce(func, wait, immediate) {
           markerDiv.className = "mapboxgl-marker"; // Ensure it has Mapbox's default styles
   
           // Optionally customize further (e.g., adding background color)
-          markerDiv.style.backgroundImage = `url("https://uploads-ssl.webflow.com/65dc8bd2aa4af4c4177edf9d/663bb2662895c0e73f6dd1f5_Subtract.svg")`;
+          markerDiv.style.backgroundImage = markerDiv_icon;
   
           var nameLink = `<a href="${markerData.googleMapsUrl}" target="_blank" style="font-family: 'Rector'; font-size: 0.75rem; color: var(--theme--text); text-decoration: none; outline: none;">${markerData.name}</a>`;
           var marker = new mapboxgl.Marker(markerDiv) // Set pin color
@@ -430,7 +430,7 @@ function debounce(func, wait, immediate) {
       name: "Hamlet Gardens",
       googleMapsUrl: "https://maps.app.goo.gl/Px5ctUwYWtuZP3Uq7",
       iconUrl:
-        "https://uploads-ssl.webflow.com/65dc8bd2aa4af4c4177edf9d/663bade8e93468967b4aff87_Group%20574.svg",
+       permanentPin_icon_url,
     };
   
     function addPermanentPin() {
