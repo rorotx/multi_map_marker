@@ -65,14 +65,14 @@ $(document).ready(function () {
       // Update the "from" slider and output
       fromSlider.min = minValue;
       fromSlider.value = minValue;
-      fromOutput.innerHTML = "Â£" + minValue;
+      fromOutput.innerHTML = "£" + minValue;
       fromSliderValue.value = minValue;
   
       toSlider.setAttribute("max", maxValues.length - 1);
       toSlider.setAttribute("min", 0);
       toSlider.setAttribute("value", maxValues.length - 1);
       toSlider.setAttribute("step", 1);
-      toOutput.innerHTML = "Â£" + maxValues[toSlider.value];
+      toOutput.innerHTML = "£" + maxValues[toSlider.value];
       toSliderValue.setAttribute("value", maxValues[toSlider.value]);
       updateSliderValue();
     }
