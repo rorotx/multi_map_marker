@@ -1,5 +1,5 @@
 /* eslint-disable no-undef*/
-
+ 
 $(document).ready(function () {
   let currentBedroomConfiguration = ""; // Current bedroom configuration
   let allowedValues = []; // Allowed "to" values for the current configuration
