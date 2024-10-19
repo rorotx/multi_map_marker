@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   function updateConfiguration() {
     const isStudioBedroomChecked = $(".studiobedroom").hasClass("active");
-    const isOneBedroomChecked =    $(".onebedroom").hasClass("active");
+    const isOneBedroomChecked = $(".onebedroom").hasClass("active");
     const isTwoBedroomChecked = $(".twobedroom").hasClass("active");
     const isThreeBedroomChecked = $(".threebedroom").hasClass("active");
 
@@ -64,10 +64,10 @@ $(document).ready(function () {
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom; 3 Bedroom");
     }
     else if (isStudioBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
-    setAllowedValues("studioTwoThreeBedroom");
-    $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom; 3 Bedroom");
+      setAllowedValues("studioTwoThreeBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom; 3 Bedroom");
     }
-  
+
     else if (isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
       setAllowedValues("oneTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val(
@@ -77,8 +77,8 @@ $(document).ready(function () {
     else if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
       setAllowedValues("studioOneTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom;1 Bedroom; 2 Bedroom; 3 Bedroom");
-    } 
-      else {
+    }
+    else {
       setAllowedValues("oneTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val(
         "1 Bedroom; 2 Bedroom; 3 Bedroom"
