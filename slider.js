@@ -83,6 +83,7 @@ $(document).ready(function () {
   }
 
   function setAllowedValues(bedroomType) {
+    console.log('bedroomType', bedroomType);
     const minValues = bedroomConfigurations[bedroomType].map((pair) => pair[0]);
     const minValue = Math.min(...minValues);
     const maxValues = bedroomConfigurations[bedroomType].map((pair) => pair[1]);
