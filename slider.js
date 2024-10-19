@@ -15,74 +15,68 @@ $(document).ready(function () {
     if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
       console.log("studioOneTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom;1 Bedroom; 2 Bedroom; 3 Bedroom");
-    }
-    else if (isStudioBedroomChecked) {
-      console.log("studioBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom");
-    }
-    else if (isOneBedroomChecked) {
-      console.log("oneBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom");
-    } else if (isTwoBedroomChecked) {
-      console.log("twoBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val("2 Bedroom");
-    } else if (isThreeBedroomChecked) {
-      console.log("threeBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val("3 Bedroom");
-    }
-    else if (isOneBedroomChecked && isTwoBedroomChecked) {
-      console.log("oneTwoBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val(
-        "1 Bedroom; 2 Bedroom"
-      );
-    } else if (isTwoBedroomChecked && isThreeBedroomChecked) {
-      console.log("twoThreeBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val(
-        "2 Bedroom; 3 Bedroom"
-      );
-    } else if (isOneBedroomChecked && isThreeBedroomChecked) {
-      console.log("oneThreeBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val(
-        "1 Bedroom; 3 Bedroom"
-      );
-    }
-    else if (isStudioBedroomChecked && isOneBedroomChecked) {
-      console.log("studioOneBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom");
-    }
-    else if (isStudioBedroomChecked && isTwoBedroomChecked) {
-      console.log("studioTwoBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom");
-    }
-    else if (isStudioBedroomChecked && isThreeBedroomChecked) {
-      console.log("studioThreeBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 3 Bedroom");
-    }
-    else if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked) {
+  } 
+  else if (isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
+      console.log("oneTwoThreeBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 2 Bedroom; 3 Bedroom");
+  } 
+  else if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked) {
       console.log("studioOneTwoBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom; 2 Bedroom");
-    }
-    else if (isStudioBedroomChecked && isOneBedroomChecked && isThreeBedroomChecked) {
+  } 
+  else if (isStudioBedroomChecked && isOneBedroomChecked && isThreeBedroomChecked) {
       console.log("studioOneThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom; 3 Bedroom");
-    }
-    else if (isStudioBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
+  } 
+  else if (isStudioBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
       console.log("studioTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom; 3 Bedroom");
-    }
-
-    else if (isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
+  } 
+  else if (isStudioBedroomChecked && isOneBedroomChecked) {
+      console.log("studioOneBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom");
+  } 
+  else if (isStudioBedroomChecked && isTwoBedroomChecked) {
+      console.log("studioTwoBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom");
+  } 
+  else if (isStudioBedroomChecked && isThreeBedroomChecked) {
+      console.log("studioThreeBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 3 Bedroom");
+  } 
+  else if (isOneBedroomChecked && isTwoBedroomChecked) {
+      console.log("oneTwoBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 2 Bedroom");
+  } 
+  else if (isTwoBedroomChecked && isThreeBedroomChecked) {
+      console.log("twoThreeBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("2 Bedroom; 3 Bedroom");
+  } 
+  else if (isOneBedroomChecked && isThreeBedroomChecked) {
+      console.log("oneThreeBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 3 Bedroom");
+  } 
+  else if (isStudioBedroomChecked) {
+      console.log("studioBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom");
+  } 
+  else if (isOneBedroomChecked) {
+      console.log("oneBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom");
+  } 
+  else if (isTwoBedroomChecked) {
+      console.log("twoBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("2 Bedroom");
+  } 
+  else if (isThreeBedroomChecked) {
+      console.log("threeBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("3 Bedroom");
+  } 
+  else {
       console.log("oneTwoThreeBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val(
-        "1 Bedroom; 2 Bedroom; 3 Bedroom"
-      );
-    }
-    else {
-      console.log("oneTwoThreeBedroom");
-      $("#hg__number_of_bedrooms__multiple_choice_").val(
-        "1 Bedroom; 2 Bedroom; 3 Bedroom"
-      );
-    }
+      $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 2 Bedroom; 3 Bedroom");
+  }
+  
   }
 
   function console.log(bedroomType) {
