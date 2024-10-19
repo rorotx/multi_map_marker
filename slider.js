@@ -13,73 +13,73 @@ $(document).ready(function () {
     let bedroomType = "";
 
     if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
-      console.log("studioOneTwoThreeBedroom");
+      setAllowedValues("studioOneTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom;1 Bedroom; 2 Bedroom; 3 Bedroom");
   } 
   else if (isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
-      console.log("oneTwoThreeBedroom");
+      setAllowedValues("oneTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 2 Bedroom; 3 Bedroom");
   } 
   else if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked) {
-      console.log("studioOneTwoBedroom");
+      setAllowedValues("studioOneTwoBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom; 2 Bedroom");
   } 
   else if (isStudioBedroomChecked && isOneBedroomChecked && isThreeBedroomChecked) {
-      console.log("studioOneThreeBedroom");
+      setAllowedValues("studioOneThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom; 3 Bedroom");
   } 
   else if (isStudioBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
-      console.log("studioTwoThreeBedroom");
+      setAllowedValues("studioTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom; 3 Bedroom");
   } 
   else if (isStudioBedroomChecked && isOneBedroomChecked) {
-      console.log("studioOneBedroom");
+      setAllowedValues("studioOneBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom");
   } 
   else if (isStudioBedroomChecked && isTwoBedroomChecked) {
-      console.log("studioTwoBedroom");
+      setAllowedValues("studioTwoBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom");
   } 
   else if (isStudioBedroomChecked && isThreeBedroomChecked) {
-      console.log("studioThreeBedroom");
+      setAllowedValues("studioThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 3 Bedroom");
   } 
   else if (isOneBedroomChecked && isTwoBedroomChecked) {
-      console.log("oneTwoBedroom");
+      setAllowedValues("oneTwoBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 2 Bedroom");
   } 
   else if (isTwoBedroomChecked && isThreeBedroomChecked) {
-      console.log("twoThreeBedroom");
+      setAllowedValues("twoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("2 Bedroom; 3 Bedroom");
   } 
   else if (isOneBedroomChecked && isThreeBedroomChecked) {
-      console.log("oneThreeBedroom");
+      setAllowedValues("oneThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 3 Bedroom");
   } 
   else if (isStudioBedroomChecked) {
-      console.log("studioBedroom");
+      setAllowedValues("studioBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom");
   } 
   else if (isOneBedroomChecked) {
-      console.log("oneBedroom");
+      setAllowedValues("oneBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom");
   } 
   else if (isTwoBedroomChecked) {
-      console.log("twoBedroom");
+      setAllowedValues("twoBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("2 Bedroom");
   } 
   else if (isThreeBedroomChecked) {
-      console.log("threeBedroom");
+      setAllowedValues("threeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("3 Bedroom");
   } 
   else {
-      console.log("oneTwoThreeBedroom");
+      setAllowedValues("oneTwoThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("1 Bedroom; 2 Bedroom; 3 Bedroom");
   }
   
   }
 
-  function console.log(bedroomType) {
+  function setAllowedValues(bedroomType) {
     console.log('bedroomType', bedroomType);
     const minValues = bedroomConfigurations[bedroomType].map((pair) => pair[0]);
     const minValue = Math.min(...minValues);
