@@ -29,6 +29,14 @@ $(document).ready(function () {
       setAllowedValues("studioThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 3 Bedroom");
     }
+    else if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked) {
+      setAllowedValues("studioOneTwoBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom; 2 Bedroom");
+    }
+    else if (isStudioBedroomChecked && isOneBedroomChecked && isThreeBedroomChecked) {
+      setAllowedValues("studioOneThreeBedroom");
+      $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 1 Bedroom; 3 Bedroom");
+    }
     else if (isStudioBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
     setAllowedValues("studioTwoThreeBedroom");
     $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom; 3 Bedroom");
