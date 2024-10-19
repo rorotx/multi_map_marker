@@ -13,7 +13,6 @@ $(document).ready(function () {
     let bedroomType = "";
 
 
-
     if (isStudioBedroomChecked) {
       setAllowedValues("studioBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom");
@@ -29,6 +28,10 @@ $(document).ready(function () {
     else if (isStudioBedroomChecked && isThreeBedroomChecked) {
       setAllowedValues("studioThreeBedroom");
       $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 3 Bedroom");
+    }
+    else if (isStudioBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
+    setAllowedValues("studioTwoThreeBedroom");
+    $("#hg__number_of_bedrooms__multiple_choice_").val("Studio Bedroom; 2 Bedroom; 3 Bedroom");
     }
     else if (isStudioBedroomChecked && isOneBedroomChecked && isTwoBedroomChecked && isThreeBedroomChecked) {
       setAllowedValues("studioOneTwoThreeBedroom");
