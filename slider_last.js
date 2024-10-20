@@ -86,7 +86,7 @@ $(document).ready(function () {
         }
         else {
             setAllowedValues("oneTwoThreeBedroom");
-            $("[id*='__number_of_bedrooms__multiple_choice_']").firstMaxValueval("1 Bedroom; 2 Bedroom; 3 Bedroom");
+            $("[id*='__number_of_bedrooms__multiple_choice_']").val("1 Bedroom; 2 Bedroom; 3 Bedroom");
         }
 
     }
