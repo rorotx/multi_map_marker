@@ -3,7 +3,7 @@
 $(document).ready(function () {
     let currentBedroomConfiguration = ""; // Current bedroom configuration
     let allowedValues = []; // Allowed "to" values for the current configuration
- 
+
     function updateConfiguration() {
         var isStudioBedroomChecked = $(".studiobedroom").hasClass("active");
         var isOneBedroomChecked = $(".onebedroom").hasClass("active");
