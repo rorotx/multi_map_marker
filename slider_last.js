@@ -87,6 +87,9 @@ $(document).ready(function () {
         else {
             setAllowedValues("studioOneTwoThreeBedroom");
             $("[id*='__number_of_bedrooms__multiple_choice_']").val("");
+            if (window.location.href.includes("Kimmerston")) {
+            $("[id*='__number_of_bedrooms__multiple_choice_']").val("Studio");
+            }
         }
 
     }
