@@ -85,8 +85,8 @@ $(document).ready(function () {
             $("[id*='__number_of_bedrooms__multiple_choice_']").val("3 Bedroom");
         }
         else {
-            setAllowedValues("oneTwoThreeBedroom");
-            $("[id*='__number_of_bedrooms__multiple_choice_']").val("1 Bedroom; 2 Bedroom; 3 Bedroom");
+            setAllowedValues("studioOneTwoThreeBedroom");
+            $("[id*='__number_of_bedrooms__multiple_choice_']").val("");
         }
 
     }
@@ -138,7 +138,11 @@ $(document).ready(function () {
         updateSliderValue();
     });
     // Initial setup
-    updateConfiguration();
+    setTimeout(function () {
+        updateConfiguration();
+    }, 100);
+    
+   
     $(".form_checkbox_wrapper").on("change", function () {
         $(this).toggleClass("active");
         updateConfiguration();
