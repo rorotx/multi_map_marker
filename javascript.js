@@ -337,7 +337,7 @@ function debounce(func, wait, immediate) {
     var map = new mapboxgl.Map({
       container: "map_another_wrapper", // container ID
       style: "mapbox://styles/rob-testbed/clsarva7m00t701ql64m5bsq2", // style URL
-      center: [-0.240947, 51.494106], // starting position [lng, lat]
+      center: [-0.240947, 51.494106], // RELEVANT_LOCATION (START), starting position [lng, lat]
       zoom: 15, // starting zoom
       scrollZoom: false, // Disable map zooming with the scroll wheel
       dragPan: false, // Disable map panning by dragging
@@ -425,6 +425,7 @@ function debounce(func, wait, immediate) {
       }
     }
   
+    // RELEVANT_LOCATION (PERMANENT_PIN)
     var permanentPin = {
       coordinates: [-0.240947, 51.494106], // Example coordinates
       name: "Hamlet Gardens",
@@ -453,6 +454,7 @@ function debounce(func, wait, immediate) {
     }
     addPermanentPin(); // Add the permanent pin to the map
   
+    // RELEVANT_LOCATION (MAP INITIALIZATION)
     function mapInit() {
       map.flyTo({
         center: [-0.240947, 51.494106],
@@ -492,11 +494,12 @@ function debounce(func, wait, immediate) {
       $("html, body").scrollTop(0);
     });
   
+    // RELEVANT_LOCATION (MAP state 1 CLICK)
     $("#mapState1").click(function () {
       mapInit();
       $(this).css("background", "#fff"); // Set the background of the clicked state to white
     });
-  
+  // RELEVANT_LOCATION (MAP state 2 CLICK)
     $("#mapState2").click(function () {
       map.flyTo({
         center: [-0.240947, 51.494106],
@@ -523,7 +526,7 @@ function debounce(func, wait, immediate) {
       $(".map_item").css("background", ""); // Reset all backgrounds
       $(this).css("background", "#fff"); // Set the background of the clicked state to white
     });
-  
+  // RELEVANT_LOCATION (MAP state 3 CLICK)
     $("#mapState3").click(function () {
       map.flyTo({
         center: [-0.240947, 51.494106],
