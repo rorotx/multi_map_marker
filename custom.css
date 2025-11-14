@@ -3,6 +3,9 @@
     --main-dark-color is the text
     --main-active-color is the highlight
     you can just add like red, or blue or any helx you like! */
+.iti__flag-container {
+    padding-bottom: 1rem !important;
+}
     :root {
       --main-light-color: #fff;
       --main-dark-color: #732001;
@@ -133,4 +136,5 @@
         width: calc(100vw - 2rem);
         max-width: 22.4rem;
       }
+
     }
